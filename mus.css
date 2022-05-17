@@ -347,18 +347,18 @@
     @media only screen and (max-width:600px) {
       
 .all .top {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .all .top img{
-    width: 2.4rem;
-    height: 3.2rem;
+    width: 2.3rem;
+    height: 3.1rem;
 }
 
 
       .all .center button {
-      width: 12rem;
-      height: 3.5rem;
-      font-size: 1.125rem;
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.1rem;
  
       }
       .all .center img{
@@ -366,9 +366,9 @@
       }
       /* menu button */
       .all .menu button {
-      width: 12rem;
-      height: 3.5rem;
-      font-size:1.125rem;
+        width: 10rem;
+        height: 3.3rem;
+        font-size: 1.1rem;
       }
       .all .menu img{
           width: 1.1875rem;
@@ -401,14 +401,15 @@
 
         footer{
             display: flex;
-            width: 80%;
-            padding: 30% 10% 0% 10%;
+            padding-top: 30%;
+         
         }
 /* time  */
       .wrapper{
          
-            position: fixed;
-            left: 19%;
+            display: flex;
+            justify-content: end;
+padding-left: 35%;
         }
     
         .wrapper .display{

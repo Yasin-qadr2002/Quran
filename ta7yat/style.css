@@ -121,14 +121,11 @@ html{
   }
 
   .all .top img{
-      width: 2.4rem;
-      height: 3.2rem;
-      transition: all 0.7s ease-out;
-  
-  }
-
+    width: 2.3rem;
+    height: 3.1rem;
+}
   .all .top{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       padding: 1% 1% 0% 1%;
 
   }
@@ -143,7 +140,7 @@ html{
  
  .all .me{
   font-weight: 100;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
 }
 .all .center .wata{
   font-family: 'third';
