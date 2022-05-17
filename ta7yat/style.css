@@ -1,0 +1,154 @@
+@font-face {
+  font-family:"secon";
+  src: url(../font/72_Sarchia_Qaisy.woff);
+}
+@font-face {
+  font-family:"third";
+  src: url(../font/NRT-Reg.woff);
+}
+@font-face {
+  font-family:"Peshang";
+  src: url(../font/Peshang_Des_3_Bold.woff);
+} 
+@font-face {
+  font-family:"quran";
+  src: url(../font/Al\ Majeed\ Quranic\ Font_shiped.ttf);
+} 
+
+body{
+  width: 100%;
+  background: url(ta7yat.jpg);
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}
+.all .top{
+  color: wheat;
+  height: 6.25rem;
+display: flex;
+justify-content: space-between;
+font-family: sans-serif;
+font-size: larger;
+flex-direction: row;
+text-transform: uppercase;
+padding-left: 0.2em;
+padding-right: 0.2em;
+padding-top: 0.2em;
+}
+.all .top img {
+  width: 2.8125rem;
+  height: 3.4375rem;
+  border: 0.0625rem solid black;
+  border-top-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  cursor: pointer;
+  background-color: wheat;
+  transition: all 0.7s ease-out;
+
+}
+
+.all .center {
+  width: 60%;
+padding: 0% 20%;
+}
+.all .center p {
+  border-radius: 0.625rem;
+  color: wheat;
+  background-color: rgba(71, 94, 86, 0.178);
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 0.625rem;
+  text-align: center;
+  padding-top: 1.125rem;
+  line-height: 3.125rem;
+  font-family: 'quran';
+}
+.top .me{
+  font-size: 2.6875rem;
+font-family:'quran';}
+
+.all .center .wata{
+  font-family: 'third';
+}
+
+.all .top img:hover{
+  font-size: 2.0625rem;
+font-weight: 900;
+font-style: oblique;
+background-color: rgba(222, 184, 135, 0.493);
+  border-bottom-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem; 
+  transform: scale(1.05);
+  border: 0.125rem solid coral; 
+}
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background:rgb(10, 9, 22);
+border-bottom-right-radius:100px;
+
+}
+::-webkit-scrollbar-thumb{
+  background:wheat;
+border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+
+
+  body{
+    background-position: center right;
+  }
+
+  .all .top img{
+      width: 2.4rem;
+      height: 3.2rem;
+      transition: all 0.7s ease-out;
+  
+  }
+
+  .all .top{
+      font-size: 0.9rem;
+      padding: 1% 1% 0% 1%;
+
+  }
+  .all .center{
+    width: 90%;
+    padding: 0% 5%;
+  }
+  
+ .all .center P{
+   font-size: 1.6rem;
+ }
+ 
+ .all .me{
+  font-weight: 100;
+  font-size: 1.9rem;
+}
+.all .center .wata{
+  font-family: 'third';
+  font-size: 1.3rem;
+}
+ 
+ 
+}

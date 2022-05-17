@@ -1,0 +1,431 @@
+      @font-face {
+      font-family: "Peshang";
+      src: url(font/Peshang_Des_3_Bold.woff);
+      }
+      @font-face {
+      font-family: "secon";
+      src: url(font/72_Sarchia_Qaisy.woff);
+      }
+
+
+      /* tanha bo smo0th krdna */
+      html{
+          scroll-behavior: smooth;
+      }
+
+      /* bo backgrounda */
+      body {
+      background: url("icoon/main.jpg");
+      margin: 0rem;
+      padding: 0rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-attachment:fixed;
+      background-clip: border-box;
+      }
+      /* buttonakan ba 3am */
+      button {
+      cursor: pointer;
+        font-family: "secon";
+        font-weight: 100;
+        }
+      
+
+
+      .all {
+      width: 100%;
+      height: 100%;
+      }
+      /* header */
+      .all .top {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: larger;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      flex-direction: row;
+      text-transform: uppercase;
+      color: aliceblue;
+      }
+
+        /* iconi menua  */
+      .all .top img {
+      width: 45.92px;
+      height: 54.928px;
+      border: 2px solid black;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      cursor: pointer;
+      transition: all 0.7s ease-out;
+      margin-top: 5.008px;
+      margin-right: 5.008px;
+      }
+
+        /* button menu  hover*/
+        .all .top img:hover {
+            font-size: 1.563rem;
+            font-weight: 900;
+            font-style: oblique;
+            border: 0.125rem solid coral;
+            border-bottom-left-radius: 1.25rem;
+            border-top-right-radius: 1.25rem;
+            transform: scale(1.06);
+      
+            }
+
+
+      .all .center a{
+      text-decoration: none;
+      }
+
+      /* iconakani naw button */
+      .icons{
+      width: 1.87rem;
+
+      }
+
+
+      /* ama tanha aw bashaya ka buttoni qurani tyaya */
+      .all .center {
+      display: flex;
+      justify-content: center;
+      }
+      /* style button */
+      .all .center button {
+      width: 18.75rem;
+      height: 5rem;
+      background-color: rgb(200, 200, 220, 0.2);
+      outline: none;
+      border-top-left-radius: 1.25rem;
+      border-bottom-right-radius: 1.25rem;
+      display: grid;
+      justify-items: center;
+      font-size: 1.62rem;
+      border: 0.125rem solid ;
+      padding: 0.313rem;  
+      }
+
+
+      /* ama bo hamw buttonakana handek codi bo awa bakar yat ka hover bet  */
+      button {
+      background: transparent;
+      transition: all 0.7s ease-out;
+      background: linear-gradient(270deg, rgba(235, 118, 23, 0.8), rgba(235,118,52,0.8),rgba(34,34,34,0), rgba(34,34,34,0));
+      background-position: 1% 50%;
+      background-size: 300% 300%;
+      text-decoration: none;
+      border: 1px solid rgba(223,190,106,0.3);
+      }
+      /* ashi xwartr */
+      .all .menu {
+      display: flex;
+      justify-content:center;
+      }
+
+      .all .menu .col{
+        display:flex;
+        /* flex:1;    */
+        flex-direction:column;
+        padding:0 1.5% 0% 1.5%;
+    }
+      .all .menu .col a{
+      text-decoration: none;
+      padding: 4% 0% 1% 0%;
+    }
+
+      /* menus buttons */
+      .all .menu button {
+      width: 18.75rem;
+      height: 5rem;
+      background-color: rgb(200, 200, 220, 0.2);
+      outline: none;
+      display: grid;
+      justify-items: center;
+      border-top-left-radius: 1.25rem;
+      border-bottom-right-radius: 1.25rem;
+      font-size: 1.625rem;
+      border: 0.125rem solid;
+      padding: 0.313rem;  
+
+      }
+      button:hover {
+      color: rgb(32, 25, 22);
+      font-size: 2.063rem;
+      font-weight: 900;
+      font-style: oblique;
+      border-bottom-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem;
+      border: rgb(248, 69, 4);
+      background-position: 99% 50%;
+      transform: scale(1.07);
+      box-shadow: 0.626rem 0.626rem 0.626rem  black;
+
+      }
+      /* The sidepanel menu 
+      awdivay la tanishta  ka yata daro*/
+      .sidepanel {
+      height: 15.625rem; 
+      width: 0; 
+      position: fixed; 
+      z-index: 1; 
+      top: 0;
+      right: 0;
+      color: black;
+      background-color: rgb(20, 20, 20, 0.7); 
+      padding-top: 3.75rem; 
+      transition: 0.5s; 
+      text-align: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem;
+      }
+      
+      .sidepanel a {
+      padding: 0.2rem 0.8rem 0.8rem 1rem;
+      text-decoration: none;
+      font-size: 1.25rem;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      display: block;
+      transition: 0.6s;
+      }
+
+      /* rangakan */
+      .sidepanel a:hover {
+      color: rgb(248, 69, 4);
+      transform:scale(1.1);
+      }
+
+      /* close button  */
+      .sidepanel .closebtn {
+      position: absolute;
+      top: 0.5rem;
+      right: 1.563rem;
+      font-size: 2.25rem;
+      margin-left: 3.125rem;
+      }
+      .sidepanel a .icon {
+      width: 1.563rem;
+      height: 1.563rem;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+      }
+      .sidepanel a .icon:hover {
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+      }
+
+      .sidepanel p {
+      font-size: 0.626rem;
+      color: white;
+      padding-left: 1.875rem;
+      font-family: sans-serif;
+      }
+      .sidepanel p span {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      word-spacing: 0.3rem;
+      font-weight: 300;
+      font-style: oblique;
+      color: red;
+      font-size: 0.89rem;
+      animation: text-shadow 1.5s ease-in-out infinite;
+      font-weight: 900;
+      line-height: 1;
+      }
+      .sidepanel p span:hover {
+      color: rgb(248, 69, 4);
+      }
+
+      span:hover {
+      animation-play-state: paused;
+      }
+
+      @keyframes text-shadow {
+      0% {
+      transform: translateY(0);
+      text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+      }
+
+      20% {
+      transform: translateY(-1em);
+      text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b,
+      0 -0.25em 0 #fefc4b;
+      }
+
+      40% {
+      transform: translateY(0.5em);
+      text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd,
+      0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+      }
+
+      60% {
+      transform: translateY(-0.25em);
+      text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd,
+      0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+      }
+
+      80% {
+      transform: translateY(0);
+      text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+      }
+      }
+      
+      footer{
+        display: flex;
+        width: 80%;
+        padding:5% 10%;
+    
+    }
+
+/* time  */
+      .wrapper{
+         
+            background: linear-gradient(135deg, rgba(235, 118, 23,1));
+            cursor: default;
+            animation: animate 2s  infinite;
+        }
+        .wrapper .display,
+        .wrapper span{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .wrapper .display{
+            z-index: 999;
+            height: 4rem;
+            width: 13rem;
+            text-align: center;
+               }
+        .display #time{
+            line-height: 4rem;
+            font-size: 1.6875rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, rgba(235, 118, 23, 1), rgba(235,118,52,1));
+            -webkit-background-clip:text ;
+            -webkit-text-fill-color: transparent;
+            animation: animate 1.9s  infinite;
+            font-family: 'Poppins', sans-serif;
+            border-top-left-radius: 1.25rem;
+            border-bottom-right-radius: 1.25rem;
+            box-shadow: 0.300rem 0.300rem 0.300rem  black;
+            transform: scale(1);
+            transition: all 0.7s ease-out;
+
+
+        }
+        .display #time:hover{
+            color: rgb(32, 25, 22,1);
+            border-bottom-left-radius: 1.25rem;
+            border-top-right-radius: 1.25rem;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border:1px solid rgb(248, 69, 4,1);
+            transform: scale(1.01);
+            box-shadow: 0.626rem 0.626rem 0.626rem  black;
+            transition: all 0.7s ease-out;
+
+        }
+        @keyframes animate {
+            100%{
+              filter: hue-rotate(360deg);
+            }
+        }
+
+
+    @media only screen and (max-width:600px) {
+      
+.all .top {
+    font-size: 1rem;
+}
+.all .top img{
+    width: 2.4rem;
+    height: 3.2rem;
+}
+
+
+      .all .center button {
+      width: 12rem;
+      height: 3.5rem;
+      font-size: 1.125rem;
+ 
+      }
+      .all .center img{
+          width: 1.1875rem;
+      }
+      /* menu button */
+      .all .menu button {
+      width: 12rem;
+      height: 3.5rem;
+      font-size:1.125rem;
+      }
+      .all .menu img{
+          width: 1.1875rem;
+      }
+
+      /* The sidepanel menu */
+      .sidepanel {
+      height: 14.625rem; 
+     
+      }
+      .sidepanel a {
+      padding: 0.2rem 0.5rem 0.5rem 1rem;
+      font-size: 1rem;
+      transition: 0.6s;
+      }
+
+      .sidepanel p {
+      padding-left: 0.05rem;
+      font-family: sans-serif;
+      }
+      .sidepanel p span {
+      line-height: 0.5;
+      }
+
+      .sidepanel a .icon {
+        width: 1.2rem;
+        height: 1.563rem;
+     
+        }
+
+        footer{
+            display: flex;
+            width: 80%;
+            padding: 30% 10% 0% 10%;
+        }
+/* time  */
+      .wrapper{
+         
+            position: fixed;
+            left: 19%;
+        }
+    
+        .wrapper .display{
+            z-index: 999;
+            height: 2.3rem;
+            width: 11rem;
+               }
+        .display #time{
+            line-height: 2rem;
+            font-size: 1.4rem;
+        }
+
+
+ 
+     
+   
+    }
+      
+     
+   

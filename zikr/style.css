@@ -1,0 +1,177 @@
+
+@font-face {
+    font-family:"secon";
+    src: url(../font/72_Sarchia_Qaisy.woff);
+  }
+  @font-face {
+    font-family:"third";
+    src: url(../font/NRT-Reg.woff);
+  }
+  @font-face {
+    font-family:"Peshang";
+    src: url(../font/Peshang_Des_3_Bold.woff);
+  } 
+body {
+    height: 100%;
+    width: 100%;
+background: url(zikr.jpg); 
+margin: 0;
+padding: 0;
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center bottom;
+background-attachment: fixed;
+}
+button{
+    cursor: pointer;
+}
+
+
+.all{
+width: 100%;
+height: 100%;
+}
+.all .top{
+    height: 6.25rem;
+display: flex;
+justify-content: space-between;
+font-size: larger;
+font-family: sans-serif;
+flex-direction: row;
+text-transform: uppercase;
+padding-top: 0.2rem;
+padding-left: 0.2rem;
+padding-right: 0.2rem;
+}
+.all .top img{
+    width: 2.8125rem;
+    height: 3.4375rem;
+    background-color: rgb(200, 220, 200,.2);
+    border: 0.125rem solid black;
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+    
+
+}
+
+
+.all .down{
+  display: flex;
+  flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row-reverse;
+      padding-left: 5%;
+      padding-right: 5%;
+
+}
+
+.all .down a{
+  padding: 1% 1% 0% 1%;
+}
+
+
+.all .top img:hover{
+    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem; 
+  border: 0.125rem solid coral;
+  transform: scale(1.05);
+ 
+}
+
+  
+
+  
+  button {
+    background: transparent;
+    transition: all 0.7s ease-out;
+   background: linear-gradient(270deg, rgb(245, 245, 245,1), rgb(245, 245, 245,1),rgba(34,34,34,0), rgba(34,34,34,0));
+    
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    border: 0.0625rem solid rgba(223,190,106,0.3);
+  }
+  
+  .all .down button{
+    width: 11.25rem;
+    height: 3.875rem;
+    outline: none;
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    font-size: 1.125rem;
+    font-family: 'Peshang';
+    padding: 0.3125rem;
+    font-weight: 400;
+    border: 0.0625rem solid;
+    }
+    button:hover {
+        color: rgb(253, 78, 4);
+        font-size: 2.0625rem;
+        font-weight: 900;
+        font-style: oblique;
+        border-bottom-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+        border: rgb(248, 69, 4);
+        background-position: 99% 50%;
+      transform: scale(1.07);
+      box-shadow: 0.625rem 0.625rem 0.625rem  black;
+
+      }
+    .all .me{
+        font-family:'secon';
+        font-weight: 200;
+    }
+    
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+border-bottom-right-radius:100px;
+margin-bottom: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background:coral;
+border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width:600px) {
+
+  .all .top img{
+      width: 2.4rem;
+      height: 3.2rem;
+      transition: all 0.7s ease-out;
+  
+  }
+
+  .all .top{
+      font-size: 1rem;
+      padding: 1% 1% 0% 1%;
+
+  }
+ 
+  .all .down a{
+      padding: 0.5% 1.5% 1% 2%;
+
+  }
+ 
+ 
+ 
+  .all .down button{
+      width: 8.9rem;
+      height:3.4rem;
+      font-size: 1rem;
+   
+      
+      }
+}

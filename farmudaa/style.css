@@ -1,0 +1,240 @@
+@font-face {
+    font-family:"secon";
+    src: url(../font/72_Sarchia_Qaisy.woff);
+  }
+  @font-face {
+    font-family:"third";
+    src: url(../font/NRT-Reg.woff);
+  }
+  @font-face {
+    font-family:"Peshang";
+    src: url(../font/Peshang_Des_3_Bold.woff);
+  } 
+  @font-face {
+      font-family: "quran";
+      src: url(../font/_PDMS_Saleem_QuranFont.ttf);
+  }
+body {
+    width: 100%;
+background: url("../nawakan/nawakanixwda.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+
+.all{
+width: 100%;
+}
+.all .top{
+    height: 80px;
+display: flex;
+justify-content: space-between;
+font-size: larger;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+flex-direction: row;
+text-transform: uppercase;
+padding-left: 0.2rem;
+padding-right: 0.2rem;
+padding-top: 0.2rem;
+color: black;
+}
+.all .top img{
+    width: 43px;
+    height: 55px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+
+}
+.all .me{
+    font-family:'secon';
+    font-weight: 200;
+}
+
+.all .top img:hover{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    transform: scale(1.05); 
+    border: 2px solid  coral;
+
+}
+
+.all .center {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding: 5% 15% 0% 15%;
+  }
+
+
+  
+.card-container {
+  height: 27.5rem;
+  width: 20rem;
+text-align: right;
+}
+.card-container .card {
+font-weight: bold;
+width: 100%;
+}
+.card-container .card a {
+padding: 15px;
+width: 70%;
+height: 14rem;
+border: 2px solid black;
+background-color: rgb(200, 200, 220, 0.1);
+text-decoration: none;
+color: white;
+display: block;
+transition: 1s ease;
+border-bottom-left-radius: 1.5rem;
+border-top-right-radius: 1rem;
+}
+.card-container .card:hover{
+  width: 18rem;
+}
+.card-container .card a:hover {
+transform:scale(1.1);
+border-color: coral;
+height: 23rem;
+width: 90%;
+overflow-y: scroll;
+overflow-wrap: break-word;
+border-bottom-left-radius:0;
+border-top-right-radius:0;
+border-bottom-right-radius: 1.5rem;
+border-top-left-radius: 1.5rem;
+box-shadow: 15px 15px 20px black;
+}
+
+.card-container .card a:hover .card--display {
+display: none;
+}
+.card-container .card a:hover .card--hover {
+display: block;
+}
+.card-container .card a .card--display h4 {
+font-size: 23px;
+text-align: right;
+line-height: 38px;
+font-family: 'secon';
+}
+.card-container .card a .card--display h2 {
+margin: 20px 0 0;
+}
+.card-container .card a .card--hover {
+display: none;
+}
+.card-container .card a .card--hover h2 {
+margin: 20px 0;
+color: coral;
+font-family: 'secon';
+font-size: 23px;
+}
+.card-container .card a .card--hover p {
+font-weight: normal;
+line-height: 1.5;
+font-family:'third';
+
+}
+.card-container .card a .card--display h4 span{
+color: coral;
+display: block;
+
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+border-bottom-right-radius:100px;
+margin-bottom: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background:coral;
+border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+@media only screen and (max-width:600px) {
+
+  .all .top img{
+      width: 2.4rem;
+      height: 3.2rem;
+  
+  }
+  .all .top{
+      font-size: 1rem;
+      padding: 1% 1% 0% 1%;
+
+  }
+ 
+ .all .me{
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.all .center {
+ 
+  padding: 0% 0% 0% 0%;
+   }
+ 
+
+.card-container {
+  height: 19rem;
+  width: 13rem;
+  padding:0% 3% ;
+}
+
+.card-container .card a {
+padding: 1rem;
+width: 70%;
+height: 13rem;
+border: 0.0625rem solid black;
+background-color: rgb(200, 200, 220, 0.1);
+}
+.card-container .card:hover{
+  width: 13rem;
+}
+.card-container .card a:hover{
+  background-color: rgb(0, 0, 0, 0.8);
+
+}
+.card-container .card a:hover {
+
+height: 16rem;
+width: 70%;
+
+}
+  .card-container .card a .card--display h4 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  }
+  .card-container .card a .card--display h2 {
+  margin: 1rem 0 0;
+  }
+
+  .card-container .card a .card--hover h2 {
+    margin: 0.100rem 0;
+  font-size: 0.9rem;
+  }
+ 
+ 
+}

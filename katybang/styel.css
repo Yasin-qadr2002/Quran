@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: "third";
+    src: url(../font/NRT-Reg.woff);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url("../icoon/main.jpg");
+    margin: 0;
+    padding: 0;
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center bottom;
+background-attachment: fixed;
+}
+button{
+    cursor: pointer;
+}
+
+.all{
+width: 100%;
+height: 37.5rem;
+background-size: cover;
+background-position:center left;
+}
+.all .top{
+    height: 6.25rem;
+display: flex;
+justify-content: space-between;
+border-top: 1.25rem bold rgb(211, 35, 35);
+border-bottom-left-radius: 1.25rem;
+font-size: larger;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+flex-direction: row;
+text-transform: uppercase;
+color: black;
+padding-left: 0.2em;
+padding-right: 0.2em;
+padding-top: 0.2em;
+
+
+}
+.all .top img{
+    width: 2.8125rem;
+    height: 3.4375rem;
+    border: 0.0625rem solid black;
+    background: rgb(200, 200, 220,.2);
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+
+}
+
+
+.all .top img:hover{
+    font-size: 1.5625rem;
+font-weight: 900;
+font-style: oblique;
+background-color: rgba(222, 184, 135, 0.493);
+    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border: 0.125rem solid coral;
+    transform: scale(1.05);
+  
+}
+
+.all .center{
+    display: flex;
+    justify-content: center;
+    padding: 20%  5%;
+}
+
+.all .center p{
+
+    font-size: 1.75rem;
+    
+    font-weight: 700;
+    font-family: 'third';
+    background: linear-gradient(to right, #ab0917 30%,  #14078d 80%,#e6d00b 20%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+
+}
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+
+    .all .top img{
+        width: 2.4rem;
+        height: 3.2rem;
+    
+    }
+    .all .top{
+        font-size: 1rem;
+        padding: 1% 1% 0% 1%;
+  
+    }
+    .all .center p{
+        font-size: 1.5rem;
+    }
+}
+  
+
+  
+  

@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family:"secon";
+    src: url(../font/72_Sarchia_Qaisy.woff);
+  }
+  @font-face {
+    font-family:"third";
+    src: url(../font/NRT-Reg.woff);
+  }
+  @font-face {
+    font-family:"Peshang";
+    src: url(../font/Peshang_Des_3_Bold.woff);
+  } 
+body {
+    height: 200rem;
+    width: 100%;
+background: url("nawakanixwda.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+
+.all{
+width: 100%;
+}
+.all .top{
+    height: 4rem;
+display: flex;
+justify-content: space-between;
+font-size: larger;
+flex-direction: row;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+text-transform: uppercase;
+padding-left: 0.2rem;
+padding-right: 0.2rem;
+padding-top: 0.2rem;
+color: black;
+}
+
+.all .top img{
+    width: 2.6875rem;
+    height: 3.4375rem;
+    background-color: rgb(200, 220, 200,.2);
+    border: 0.125rem solid black;
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+
+}
+.all .center{
+    text-align: right;
+    font-size:1.5625rem;
+
+}
+.all .center p{
+    text-align: right;
+    padding: 0.625rem;
+    font-weight: 400;
+    background-color: rgb(200, 200, 200,.1);
+    border-radius: 1.25rem;
+    line-height: 2.1875rem;
+font-family: 'third';
+
+}
+.all .top img:hover{
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid coral;
+    transform: scale(1.05);
+}
+.all .top .naw{
+    font-family: 'secon';
+    font-weight: 150px;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track{
+    background: #f1f1f1;
+  border-bottom-right-radius:100px;
+ 
+  }
+  ::-webkit-scrollbar-thumb{
+    background:rgb(11, 24, 24);
+  border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #555;
+  
+  }
+  html{
+    scroll-behavior: smooth;
+}
+
+
+@media only screen and (max-width:600px) {
+
+  .all .top img{
+      width: 2.4rem;
+      height: 3.2rem;
+  
+  }
+
+  .all .top{
+      font-size: 0.8rem;
+      padding: 1% 1% 0% 1%;
+
+  }
+ .all .center P{
+   font-size: 1.3rem;
+ }
+ 
+ .all .top .naw{
+  font-size: 1.3rem;
+}
+ 
+ 
+}

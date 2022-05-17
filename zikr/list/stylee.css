@@ -1,0 +1,149 @@
+@font-face {
+  font-family:"secon";
+  src: url(../../font/72_Sarchia_Qaisy.woff);
+}
+@font-face {
+  font-family:"third";
+  src: url(../../font/NRT-Reg.woff);
+}
+@font-face {
+  font-family:"Peshang";
+  src: url(../../font/Peshang_Des_3_Bold.woff);
+}  
+@font-face {
+  font-family: "quran";
+  src: url(../../font/Al\ Majeed\ Quranic\ Font_shiped.ttf);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+background: url(../zikr.jpg); 
+margin: 0;
+padding: 0;
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center bottom;
+background-attachment: fixed;
+}
+button {
+  cursor: pointer;
+}
+
+.all {
+  width: 100%;
+  /* height: 700px; */
+}
+.all .top {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 20px bold rgb(211, 35, 35);
+  border-bottom-left-radius: 20px;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  text-transform: uppercase;
+  padding-top: 0.2em;
+padding-left: 0.2em;
+padding-right: 0.2em;
+
+}
+.all .top img {
+  width: 45px;
+  height: 55px;
+  border: 2px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+
+}
+
+.all .center {
+  width: 60%;
+ padding: 0% 20%;
+}
+.all .center p {
+  border-radius: 10px;
+  background-color: rgb(248, 69, 15,.3);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  padding-top: 18px;
+  line-height: 66px;
+  font-family: 'quran';
+}
+.all .top img:hover{
+  color: rgb(248, 69, 4);
+  font-size: 33px;
+font-weight: 900;
+font-style: oblique;
+background-color: rgb(248, 69, 4,.1);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px; 
+  border: 2px solid coral; 
+  transform: scale(1.1);
+}
+.all .me{
+  font-family:'secon';
+  font-weight: 200;
+  
+}
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+border-bottom-right-radius:100px;
+margin-bottom: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background:coral;
+border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+@media only screen and (max-width:600px) {
+
+  .all .top img{
+      width: 2.4rem;
+      height: 3.2rem;
+      transition: all 0.7s ease-out;
+  
+  }
+
+  .all .top{
+      font-size: 1rem;
+      padding: 1% 1% 0% 1%;
+
+  }
+  .all .center{
+    width: 90%;
+    padding: 0% 5%;
+  }
+ .all .center P{
+   font-size: 1.6rem;
+ }
+ 
+ .all .me{
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+ 
+ 
+}
